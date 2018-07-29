@@ -64,7 +64,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="agileits_top_menu">
 					<div class="navbar-header">
-					<a href="../index.php" style="color:#fff">C<i class="glyphicon glyphicon-globe" style="font-size:30px; "></i>mumart</a>
+					<a href="index.php" style="color:#fff">C<i class="glyphicon glyphicon-globe" style="font-size:30px; "></i>mumart</a>
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#parents">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -78,7 +78,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<div class="collapse navbar-collapse" id="parents" >
 						
 							<ul class="nav navbar-nav">
-    							    	<li><a href="../index.php" style="color:#B3B6B7;font-size:12px">Home</a></li>
+    							    	<li><a href="index.php" style="color:#B3B6B7;font-size:12px">Home</a></li>
 									<li><a href="network.php" style="color:#B3B6B7;font-size:12px"><div class="globe-container" id="roh">
 	   
 	</div></a></li>

@@ -1,0 +1,37 @@
+CREATE TABLE `login_net` (
+ `user_id` int(255) NOT NULL AUTO_INCREMENT,
+ `name` varchar(200) NOT NULL,
+ `mobile` varchar(15) NOT NULL,
+ `b_url` varchar(200) NOT NULL,
+ `email_id` varchar(200) NOT NULL,
+ `password` varchar(200) NOT NULL,
+ PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1
+
+CREATE TABLE `likes_comments` (
+ `user_id` int(255) NOT NULL,
+ `post_id` int(200) NOT NULL,
+ `id` int(200) NOT NULL AUTO_INCREMENT,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=latin1
+
+CREATE TABLE `comments` (
+ `name` varchar(200) NOT NULL,
+ `post_id` int(255) NOT NULL,
+ `comment` varchar(6000) NOT NULL,
+ `id` int(255) NOT NULL AUTO_INCREMENT,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=latin1
+
+
+CREATE TABLE `network` (
+ `id` int(255) NOT NULL AUTO_INCREMENT,
+ `mobile` varchar(12) NOT NULL,
+ `details` varchar(5000) NOT NULL,
+ `product_type` varchar(200) NOT NULL,
+ `image` varchar(255) NOT NULL,
+ `timestamp` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+ `status` int(15) DEFAULT '0',
+ PRIMARY KEY (`id`),
+ KEY `status` (`status`)
+) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=latin1
