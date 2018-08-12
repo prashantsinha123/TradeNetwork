@@ -20,7 +20,7 @@ if(isset($_POST['name']) && isset($_POST['mobile']) && ($_POST['psw'])){
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "http://control.msg91.com/api/sendotp.php?otp_length=&authkey=199209AbNfnFQtz5a8f006b&message=Your Verification code is:$code&sender=ComuMart&mobile=$mobile&otp=$code&otp_expiry=&email=",
+  CURLOPT_URL => "http://control.msg91.com/api/sendotp.php?otp_length=&authkey=yourauthenticationkey&message=Your Verification code is:$code&sender=ComuMart&mobile=$mobile&otp=$code&otp_expiry=&email=",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
@@ -62,7 +62,7 @@ $_SESSION['mob']=$mobile;
 		$curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://control.msg91.com/api/verifyRequestOTP.php?authkey=199209AbNfnFQtz5a8f006b&mobile=$email1&otp=$verification",
+  CURLOPT_URL => "https://control.msg91.com/api/verifyRequestOTP.php?authkey=yourauthenticationkey&mobile=$email1&otp=$verification",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
@@ -120,7 +120,7 @@ if($row_count!=0){
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "http://control.msg91.com/api/sendotp.php?otp_length=&authkey=199209AbNfnFQtz5a8f006b&message=Your Verification code is:$code&sender=ComuMart&mobile=$email&otp=$code&otp_expiry=&email=",
+  CURLOPT_URL => "http://control.msg91.com/api/sendotp.php?otp_length=&authkey=yourauthenticationkey&message=Your Verification code is:$code&sender=ComuMart&mobile=$email&otp=$code&otp_expiry=&email=",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
@@ -161,7 +161,7 @@ if ($err) {
 		$curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://control.msg91.com/api/verifyRequestOTP.php?authkey=199209AbNfnFQtz5a8f006b&mobile=$email1&otp=$verify",
+  CURLOPT_URL => "https://control.msg91.com/api/verifyRequestOTP.php?authkey=yourauthenticationkey&mobile=$email1&otp=$verify",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
