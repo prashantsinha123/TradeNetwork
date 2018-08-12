@@ -25,7 +25,7 @@ echo $imglink_absolute;
 $image_path='/home/comumlay/public_html/images/'.$imglink;
 // database connection ends here
 
-$Way2web = new Way2enjoyweb("support@comumart.com", "comumart");
+$Way2web = new Way2enjoyweb("your username in cpanel mail client", "comumart");
 
 $params = array(
     "url" => $imglink_absolute,
